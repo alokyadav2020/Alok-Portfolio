@@ -1,65 +1,43 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin: 0;
-  }
-  
-  p {
-    font-size: 1em;
-    margin: 10px 0;
-  }
-  
-  section {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
-  a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    color: #333;
-  }
-  
-  #projects ul li {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  #projects ul li a {
-    padding: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-  }
-  
-  #projects ul li a:hover {
-    background-color: #ccc;
-  }
-  
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(14, 33, 41);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
