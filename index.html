@@ -9,13 +9,46 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/contacts/contact-1/assets/css/contact-1.css">
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/contacts/contact-1/assets/css/contact-1.css">
+  <!-- Add Font Awesome for better icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Add AOS library for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="container-fluid  pt-4 pb-4" style="background-color:rgb(16, 17, 17);">
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(16, 17, 17, 0.9);">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alok Ranjan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#expertise">Expertise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-
+  <!-- Original header with contact info -->
+  <header class="container-fluid pt-4 pb-4" style="background-color:rgb(16, 17, 17); margin-top: 56px;">
     <div class="container text-center text-white fs-5">
       <div class="row">
         <div class="col">
@@ -37,9 +70,6 @@
             </svg>
             &nbspalokranjan.ucer@gmail.com
           </span>
-
-
-
         </div>
         <div class="col">
           <span><i class="bi bi-github">
@@ -61,350 +91,802 @@
                 </svg>
               </a>
             </i></span>
-            <!-- <div class="mt-3 pt-4 pe-2 ms-5">
-              <button onclick="openTab(this)" href='Data/AlokRanjan.pdf' name='Data/AlokRanjan.pdf' type="button"
-                class="btn btn-dark">Resume</button>
-            </div> -->
         </div>
-
       </div>
     </div>
-    <!-- <p>Data Scientist</p> -->
   </header>
 
   <main>
     <div class="container-fluid">
-      <div>
-        <img src="Data/Alok-Ranjan2.png" alt="Snow" style="width:100%;">
-        <!-- <div class="bottom-left">Bottom Left</div> -->
-        <div class="top-right pt-5">
-          <!-- <div class="pt-5 mt-5 ps-5 ms-5 ">
-            <H6  style="font-size:7vw; font-weight: bold;">Alok Ranjan</H6>
+      <div id="home">
+        <!-- Hero section with improved layout -->
+        <div class="hero-section position-relative">
+          <img src="Data/Alok-Ranjan2.png" alt="Hero Background" style="width:100%;">
+          <div class="hero-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-lg-6">
+                  <div data-aos="fade-right" data-aos-duration="1000" class="text-white p-4 rounded hero-text-bg">
+                    <h1 class="display-4 fw-bold">Alok Ranjan</h1>
+                    <h2 class="h3 mb-4">Data Scientist & AI Specialist</h2>
+                    <p class="lead">Turning complex data into actionable insights through machine learning, 
+                    computer vision, NLP, and generative AI.</p>
+                    <div class="d-flex gap-3 mt-4">
+                      <button onclick="openTab(this)" href='Data/AlokRanjanNew.pdf' name='Data/AlokRanjanNew.pdf' 
+                        class="btn btn-light btn-lg">Download Resume</button>
+                      <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="mt-1 ps-5 ms-5">
-            <H2 style="font-size:2.5vw; font-weight: bold;">Data Scientist</H2>
-          </div> -->
-          <div class="mt-3 pt-4 pe-2 ms-5">
-            <button onclick="openTab(this)" href='Data/AlokRanjanNew.pdf' name='Data/AlokRanjanNew.pdf' type="button"
-              class="btn btn-dark">Resume</button>
-          </div>
-          <!-- <div class="mt-5 ps-5 ms-5 shadow" style="width: 500px;">
-            <p style="font: size 1.5vw; font-style: italic; width: fit-content;" >👋 Hello, I'm Alok Ranjan, a passionate data scientist with a knack for turning complex problems into actionable insights. I specialize in machine learning, computer vision, natural language processing (NLP), and generative AI. My journey in the world of data science has been marked by innovative projects, continuous learning, and a commitment to making a positive impact.</p>
-          </div> -->
         </div>
 
-        <div class="p-5" style="background-color: rgb(249, 239, 219);">
-          <br>
-          <br>
-          <br>
-          <h6 style="font-size:4vw; font-weight: bold; text-align: center;">Experties</h6>
-          <br>
-          <br>
-          <br>
-          <div class="row align-items-center">
-            <div class="col">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <img src="Data/MachineLearning.png" class="card-img-top" alt="Machine learning">
-                <div class="card-body text-white" style="background-color: rgb(249, 239, 219);">
-                  <!-- <h5 class="card-title btn" href="https://en.wikipedia.org/wiki/Machine_learning">Exper On Machine Learning</h5> -->
-                  <!-- <p class="card-text">Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without explicit instructions.</p> -->
-                  <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" class="btn"
-                    style="font-size:1.5vw; font-weight: bold;">Expert on machine learning</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <img src="Data/cv.jfif" class="card-img-top" alt="Computer vision">
-                <div class="card-body text-white" style="background-color: rgb(249, 239, 219);">
-                  <!-- <h5 class="card-title">Exper On Computer Vision</h5> -->
-                  <!-- <p class="card-text">Computer vision tasks include methods for acquiring, processing, analyzing and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the forms of decisions.</p> -->
-                  <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" class="btn"
-                    style="font-size:1.5vw; font-weight: bold;">Exper On Computer Vision</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <img src="Data/nlp.jfif" class="card-img-top" alt="NLP">
-                <div class="card-body text-white" style="background-color: rgb(249, 239, 219);">
-                  <!-- <h5 class="card-title">Natural Language processing</h5> -->
-                  <!-- <p class="card-text">Natural language processing (NLP) is an interdisciplinary subfield of computer science and linguistics. It is primarily concerned with giving computers the ability to support and manipulate human language.</p> -->
-                  <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank" class="btn"
-                    style="font-size:1.5vw; font-weight: bold;">Expert On Natural Language processing</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <img src="Data/generativeai.jfif" class="card-img-top" alt="NLP">
-                <div class="card-body text-white" style="background-color: rgb(249, 239, 219);">
-                  <!-- <h5 class="card-title">Natural Language processing</h5> -->
-                  <!-- <p class="card-text">Natural language processing (NLP) is an interdisciplinary subfield of computer science and linguistics. It is primarily concerned with giving computers the ability to support and manipulate human language.</p> -->
-                  <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence" target="_blank" class="btn"
-                    style="font-size:1.5vw; font-weight: bold;">Expert On Generative AI</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <br>
-          <br>
-          <br>
-        </div>
-
-        <div class="pt-5 text-white" style="background-color:rgb(0, 21, 36);">
+        <!-- Projects Section with ID for navigation -->
+        <div id="projects" class="p-5" style="background-color: rgba(225, 230, 235, 0.925);">
           <br>
           <br>
 
-          <h6 style="font-size:4vw; font-weight: bolder; text-align: center;">Skills</h6>
-          <br>
-          <br>
-          <br>
-          <div class="row align-items-center">
-
-            <div class="col ps-5 ms-5">
-              <h5 class="ms-3" style="font-size:larger; font-weight: bolder; text-align:start;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                </svg>
-
-                Programming Language
-              </h5>
-              <!-- <br> -->
-              <ul class="ms-3" style="font-size:medium; font-weight: bolder; text-align:start;">
-                <li>Python</li>
-                <li>C Sharp</li>
-                <li>Javascript</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <!-- <li>C Sharp</li> -->
-              </ul>
-              <br>
-
-            </div>
-
-            <div class="col ps-5 ms-5">
-              <h5 class="ms-3" style="font-size:larger; font-weight: bolder; text-align:start;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                </svg>
-
-                Database
-              </h5>
-              <!-- <br> -->
-              <ul class="ms-3" style="font-size:medium; font-weight: bolder; text-align:start;">
-                <li>Sql Server</li>
-                <li>Mysql</li>
-                <li>MongoDB</li>
-                <li>VectorDB</li>
-                <!-- <li>HTML</li> -->
-                <!-- <li>C Sharp</li> -->
-              </ul>
-              <br>
-
-            </div>
-          </div>
-          <br>
-          <div class="row align-items-center">
-
-            <div class="col ps-5 ms-5">
-              <h5 class="ms-3" style="font-size:larger; font-weight: bolder; text-align:start;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                </svg>
-
-                Framework
-              </h5>
-              <!-- <br> -->
-              <ul class="ms-3" style="font-size:medium; font-weight: bolder; text-align:start;">
-                <li> Flask REST API</li>
-                <li>Fast API</li>
-                <li>Django</li>
-                <li>DotNet (Winform Desktop Software)</li>
-                <li>ASP.NET MVC</li>
-                <!-- <li>C Sharp</li> -->
-              </ul>
-              <br>
-
-            </div>
-
-            <div class="col ps-5 ms-5">
-              <h5 class="ms-3" style="font-size:larger; font-weight: bolder; text-align:start;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                </svg>
-
-                Machine learning Algorithm and Libraries
-              </h5>
-              <!-- <br> -->
-              <ul class="ms-3" style="font-size:medium; font-weight: bolder; text-align:start;">
-                <li>scikit-learn</li>
-                <li>Keras</li>
-                <li>Tensorflow</li>
-                <li>Pytorch</li>
-                <li>OpenCV</li>
-                <li>YOLOv5,v6,v7,v8</li>
-                <li> Detectron2</li>
-                <li>LLMs</li>
-                <li>Langchain</li>
-                <li>OpenAI</li>
-                <li>Huggingface</li>
-                <li>Gemini Pro</li>
-                <!-- <li>Huggingface</li>
-                <li>Gemini Pro</li> -->
-              </ul>
-              <br>
-
-            </div>
-          </div>
-          <br>
-          <div class="row align-items-center">
-
-            <div class="col ps-5 ms-5">
-              <h5 class="ms-3" style="font-size:larger; font-weight: bolder; text-align:start;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                </svg>
-
-                Generative AI
-
-              </h5>
-              <!-- <br> -->
-              <ul class="ms-3" style="font-size:medium; font-weight: bolder; text-align:start;">
-                <li>Open AI</li>
-                <li>Gemini Pro</li>
-                <li>Chatbot</li>
-                <li>Langchain</li>
-                <!-- <li>ASP.NET MVC</li> -->
-                <!-- <li>C Sharp</li> -->
-              </ul>
-              <br>
-
-            </div>
-
-            <div class="col ps-5 ms-5">
-              <h5 class="ms-3" style="font-size:larger; font-weight: bolder; text-align:start;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                </svg>
-
-                Others
-              </h5>
-              <!-- <br> -->
-              <ul class="ms-3" style="font-size:medium; font-weight: bolder; text-align:start;">
-                <li>Git</li>
-                <li> GitHub</li>
-                <li>Docker</li>
-                <li>MLOPs</li>
-                <li>Application Deployments on AWS and Azure</li>
-                <!-- <li>YOLOv5,v6,v7,v8</li>
-                <li> Detectron2</li>
-                <li>LLMs</li>
-                <li>Langchain</li>
-                <li>OpenAI</li>
-                <li>Huggingface</li>
-                <li>Gemini Pro</li> -->
-                <!-- <li>Huggingface</li>
-                <li>Gemini Pro</li> -->
-              </ul>
-              <br>
-
-            </div>
-          </div>
-          <br>
-
-
-
-
-        </div>
-
-        <div class="p-5" style="background-color: rgba(225, 230, 235, 0.925);">
-          <br>
-          <br>
-
-          <h6 style="font-size:4vw; font-weight: bolder; text-align: center;">My Projects & Work</h6>
-          <br>
-          <br>
-          <br>
-          <div class="row align-items-center">
-            <div class="col">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <img src="Data/MachineLearning.png" class="card-img-top" alt="Machine learning">
-                <div class="card-body text-white" style="background-color: rgb(225, 230, 235, 0.925);">
-                  <!-- <h5 class="card-title btn" href="https://en.wikipedia.org/wiki/Machine_learning">Exper On Machine Learning</h5> -->
-                  <!-- <p class="card-text">Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalize to unseen data, and thus perform tasks without explicit instructions.</p> -->
-                  <a href="https://github.com/alokyadav2020/ImageSentimentsClassificationCNN" target="_blank"
-                    class="btn" style="font-size:1.5vw; font-weight: bold;">Image sentiments classification</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <img src="Data/cv.jfif" class="card-img-top" alt="Computer vision">
-                <div class="card-body text-white" style="background-color: rgb(225, 230, 235, 0.925);">
-                  <!-- <h5 class="card-title">Exper On Computer Vision</h5> -->
-                  <!-- <p class="card-text">Computer vision tasks include methods for acquiring, processing, analyzing and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the forms of decisions.</p> -->
-                  <a href="https://github.com/alokyadav2020/DiamondPricePrediction1.git" target="_blank" class="btn"
-                    style="font-size:1.5vw; font-weight: bold;">Diamond Price Prediction</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg" style="width: 18rem;">
-                <img src="Data/nlp.jfif" class="card-img-top" alt="NLP">
-                <div class="card-body text-white" style="background-color: rgb(225, 230, 235, 0.925);">
-                  <!-- <h5 class="card-title">Natural Language processing</h5> -->
-                  <!-- <p class="card-text">Natural language processing (NLP) is an interdisciplinary subfield of computer science and linguistics. It is primarily concerned with giving computers the ability to support and manipulate human language.</p> -->
-                  <a href="https://github.com/alokyadav2020/EasyBill_Billing_Software.git" target="_blank" class="btn"
-                    style="font-size:1.5vw; font-weight: bold;">EasyBill, A winform based desktop software for POS
-                    Systems</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-lg bg-body rounded" style="width: 18rem;">
-                <img src="Data/generativeai.jfif" class="card-img-top" alt="NLP">
-                <div class="card-body text-white" style="background-color: rgb(225, 230, 235, 0.925);">
-                  <!-- <h5 class="card-title">Natural Language processing</h5> -->
-                  <!-- <p class="card-text">Natural language processing (NLP) is an interdisciplinary subfield of computer science and linguistics. It is primarily concerned with giving computers the ability to support and manipulate human language.</p> -->
-                  <a href="https://github.com/alokyadav2020/PLMS.git" target="_blank" class="btn"
-                    style="font-size:1.5vw; font-weight: bold;">PLMS, A winform based desktop software for library
-                    management system</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <br>
-          <br>
-
-        </div>
-        <div class="p-5 bg-light">
+          <h2 class="section-title text-center mb-5" data-aos="fade-up">My Projects & Work</h2>
           
-          <!-- <h6 style="font-size:4vw; font-weight: bolder; text-align: center; height: 400px;" class="text-white fs-5" >About Me</h6> -->
-          <!-- Contact 1 - Bootstrap Brain Component -->
-          <section class="bg-light py-3 py-md-5">
+          <!-- Project filter buttons -->
+          <div class="d-flex justify-content-center mb-5" data-aos="fade-up">
+            <div class="btn-group project-filter">
+              <button type="button" class="btn btn-dark active" data-filter="all">All Projects</button>
+              <button type="button" class="btn btn-dark" data-filter="ml">Machine Learning</button>
+              <button type="button" class="btn btn-dark" data-filter="dl">Deep Learning</button>
+              <button type="button" class="btn btn-dark" data-filter="nlp-gen">NLP & Generative AI</button>
+              <button type="button" class="btn btn-dark" data-filter="agentic">Agentic AI</button>
+            </div>
+          </div>
+
+          <!-- Project categories with sections -->
+          <div class="project-sections">
+            <!-- Machine Learning Section -->
+            <div id="ml-section" class="project-section mb-5">
+              <h3 class="text-center mb-4">Machine Learning Projects</h3>
+              <div class="row align-items-center">
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="ml">
+                    <img src="Data/MachineLearning.png" class="card-img-top" alt="Machine learning">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Diamond Price Prediction</h5>
+                      <p class="card-text">Machine learning model that predicts diamond prices based on various features like carat, cut, and clarity.</p>
+                      <a href="https://github.com/alokyadav2020/DiamondPricePrediction1.git" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="ml">
+                    <img src="Data/project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Fraud Detection System</h5>
+                      <p class="card-text">ML model that identifies fraudulent transactions in real-time using anomaly detection algorithms.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="ml">
+                    <img src="Data/project5.jpg" class="card-img-top" alt="Project 5">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Product Recommendation Engine</h5>
+                      <p class="card-text">Collaborative filtering system that recommends products based on user behavior and preferences.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Learning Section -->
+            <div id="dl-section" class="project-section mb-5">
+              <h3 class="text-center mb-4">Deep Learning Projects</h3>
+              <div class="row align-items-center">
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="dl">
+                    <img src="Data/cv.jfif" class="card-img-top" alt="Computer vision">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Image Sentiments Classification</h5>
+                      <p class="card-text">A CNN-based model that classifies images based on emotional content using deep learning techniques.</p>
+                      <a href="https://github.com/alokyadav2020/ImageSentimentsClassificationCNN" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="dl">
+                    <img src="Data/project3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Face Recognition System</h5>
+                      <p class="card-text">Computer vision application that identifies and authenticates users through facial recognition.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="dl">
+                    <img src="Data/project6.jpg" class="card-img-top" alt="Project 6">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Medical Image Analysis</h5>
+                      <p class="card-text">Deep learning solution that identifies abnormalities in medical scans with high precision.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NLP & Generative AI Section -->
+            <div id="nlp-gen-section" class="project-section mb-5">
+              <h3 class="text-center mb-4">NLP & Generative AI Projects</h3>
+              <div class="row align-items-center">
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="nlp-gen">
+                    <img src="Data/nlp.jfif" class="card-img-top" alt="NLP">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Sentiment Analysis Tool</h5>
+                      <p class="card-text">NLP application that analyzes customer feedback and social media posts for sentiment classification.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="nlp-gen">
+                    <img src="Data/project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Chatbot Assistant</h5>
+                      <p class="card-text">NLP-powered chatbot that answers customer queries with high accuracy using transformer models.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="nlp-gen">
+                    <img src="Data/generativeai.jfif" class="card-img-top" alt="Generative AI">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Text-to-Image Generator</h5>
+                      <p class="card-text">A generative AI model that creates realistic images from textual descriptions.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agentic AI Section -->
+            <div id="agentic-section" class="project-section mb-5">
+              <h3 class="text-center mb-4">Agentic AI Projects</h3>
+              <div class="row align-items-center">
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="agentic">
+                    <img src="Data/project8.jpg" class="card-img-top" alt="Project 8">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Autonomous Decision Agent</h5>
+                      <p class="card-text">An AI agent that makes autonomous decisions based on multi-step reasoning and planning.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="agentic">
+                    <img src="Data/project9.jpg" class="card-img-top" alt="Project 9">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Smart Assistant Ecosystem</h5>
+                      <p class="card-text">A network of AI agents that collaborate to solve complex tasks through coordination.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="agentic">
+                    <img src="Data/project10.jpg" class="card-img-top" alt="Project 10">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">Automated Research Agent</h5>
+                      <p class="card-text">An AI system that conducts research by autonomously searching, analyzing, and synthesizing information.</p>
+                      <a href="#" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Software Section -->
+            <div id="software-section" class="project-section mb-5">
+              <h3 class="text-center mb-4">Software Projects</h3>
+              <div class="row align-items-center">
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="software">
+                    <img src="Data/nlp.jfif" class="card-img-top" alt="Software">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">EasyBill</h5>
+                      <p class="card-text">A winform based desktop software for POS Systems that simplifies billing and inventory management.</p>
+                      <a href="https://github.com/alokyadav2020/EasyBill_Billing_Software.git" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card shadow-lg h-100 project-card" data-type="software">
+                    <img src="Data/generativeai.jfif" class="card-img-top" alt="Software">
+                    <div class="card-body" style="background-color: rgb(225, 230, 235, 0.925);">
+                      <h5 class="card-title">PLMS</h5>
+                      <p class="card-text">A winform based desktop software for library management system with advanced tracking features.</p>
+                      <a href="https://github.com/alokyadav2020/PLMS.git" target="_blank" class="btn btn-dark">View Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+        </div>
+
+        <!-- Expertise Section with ID - Updated with dark glossy background -->
+        <div id="expertise" class="p-5 expertise-section">
+          <br>
+          <br>
+          <br>
+          <h2 class="section-title text-center mb-5 text-white" data-aos="fade-up">Areas of Expertise</h2>
+          <br>
+          <br>
+          
+          <div class="row g-4 justify-content-center">
+            <!-- Machine Learning -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="100">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/MachineLearning.png" class="card-img-top" alt="Machine learning">
+                  <div class="card-overlay">
+                    <p>Building predictive models that learn patterns from data to make accurate predictions and decisions.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Machine Learning</h5>
+                  <p class="card-text small">Algorithms that improve through experience and data analysis.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" class="btn btn-sm btn-outline-dark me-2">Overview</a>
+                    <a href="https://scikit-learn.org/" target="_blank" class="btn btn-sm btn-outline-dark">Tools</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Deep Learning -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="150">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/cv.jfif" class="card-img-top" alt="Deep Learning">
+                  <div class="card-overlay">
+                    <p>Using neural networks with multiple layers to solve complex problems and extract high-level features.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Deep Learning</h5>
+                  <p class="card-text small">Creating neural networks that emulate human learning for advanced pattern recognition.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" class="btn btn-sm btn-outline-dark me-2">Overview</a>
+                    <a href="https://www.tensorflow.org/" target="_blank" class="btn btn-sm btn-outline-dark">TensorFlow</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Computer Vision -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="200">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/cv.jfif" class="card-img-top" alt="Computer Vision">
+                  <div class="card-overlay">
+                    <p>Enabling machines to identify, process, and interpret visual information from the real world.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Computer Vision</h5>
+                  <p class="card-text small">Teaching computers to "see" and understand visual information.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank" class="btn btn-sm btn-outline-dark me-2">Overview</a>
+                    <a href="https://opencv.org/" target="_blank" class="btn btn-sm btn-outline-dark">OpenCV</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- NLP -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="250">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/nlp.jfif" class="card-img-top" alt="NLP">
+                  <div class="card-overlay">
+                    <p>Processing, analyzing, and generating human language to enable meaningful interactions between humans and machines.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Natural Language Processing</h5>
+                  <p class="card-text small">Enabling machines to understand and generate human language.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank" class="btn btn-sm btn-outline-dark me-2">Overview</a>
+                    <a href="https://huggingface.co/" target="_blank" class="btn btn-sm btn-outline-dark">Hugging Face</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Generative AI -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="300">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/generativeai.jfif" class="card-img-top" alt="Generative AI">
+                  <div class="card-overlay">
+                    <p>Creating algorithms that generate new content like images, text, audio, and video based on training data.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Generative AI</h5>
+                  <p class="card-text small">Models that create original content based on training patterns.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence" target="_blank" class="btn btn-sm btn-outline-dark me-2">Overview</a>
+                    <a href="https://openai.com/blog/chatgpt" target="_blank" class="btn btn-sm btn-outline-dark">ChatGPT</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- RAG -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="350">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/project4.jpg" class="card-img-top" alt="RAG">
+                  <div class="card-overlay">
+                    <p>Combining language models with external knowledge sources to provide accurate, factual, and contextually rich responses.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Retrieval-Augmented Generation</h5>
+                  <p class="card-text small">Enhancing AI responses with external knowledge retrieval.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://research.facebook.com/publications/retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks/" target="_blank" class="btn btn-sm btn-outline-dark me-2">Paper</a>
+                    <a href="https://www.pinecone.io/learn/retrieval-augmented-generation/" target="_blank" class="btn btn-sm btn-outline-dark">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Agentic RAG -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="400">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/project8.jpg" class="card-img-top" alt="Agentic RAG">
+                  <div class="card-overlay">
+                    <p>Combining autonomous agents with retrieval capabilities to intelligently search for, analyze, and synthesize information.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Agentic RAG</h5>
+                  <p class="card-text small">Self-directed information retrieval systems that autonomously research topics.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://arxiv.org/abs/2307.02809" target="_blank" class="btn btn-sm btn-outline-dark me-2">Research</a>
+                    <a href="https://www.langchain.com/" target="_blank" class="btn btn-sm btn-outline-dark">LangChain</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Agentic AI -->
+            <div class="col-md-4 col-lg-3 mb-4" data-aos="flip-left" data-aos-delay="450">
+              <div class="card expertise-card shadow-lg h-100">
+                <div class="card-img-wrapper">
+                  <img src="Data/project9.jpg" class="card-img-top" alt="Agentic AI">
+                  <div class="card-overlay">
+                    <p>Creating AI systems that can autonomously plan, reason, and take actions to achieve specific goals and solve complex problems.</p>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Agentic AI</h5>
+                  <p class="card-text small">Autonomous AI systems that can plan, reason, and take actions to achieve goals.</p>
+                  <div class="expertise-links mt-3">
+                    <a href="https://arxiv.org/abs/2304.03442" target="_blank" class="btn btn-sm btn-outline-dark me-2">Research</a>
+                    <a href="https://www.anthropic.com/index/claude-sonnet" target="_blank" class="btn btn-sm btn-outline-dark">Claude</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+
+        <!-- Skills section with proper bottom spacing -->
+        <div id="skills" class="pt-5 pb-5 text-white" style="background-color:rgb(0, 21, 36); margin-bottom: 0;">
+          <div class="container">
+            <!-- Enhanced Technical Skills heading with highlight effect -->
+            <div class="skills-header text-center mb-5">
+              <h2 class="section-title highlighted-title" data-aos="fade-up">Technical Skills</h2>
+              <div class="title-highlight" data-aos="fade-up" data-aos-delay="300"></div>
+            </div>
+            
+            <!-- Programming Languages Section (Full Row) -->
+            <div class="skill-section mb-5">
+              <h3 class="skills-category-title text-center mb-4">
+                <i class="fas fa-code me-2"></i>Programming Languages
+              </h3>
+              
+              <div class="row programming-languages-grid">
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="language-card">
+                    <div class="language-icon">
+                      <i class="fab fa-python"></i>
+                    </div>
+                    <h4 class="language-name">Python</h4>
+                    <div class="language-level">Advanced</div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="150">
+                  <div class="language-card">
+                    <div class="language-icon">
+                      <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h4 class="language-name">C#</h4>
+                    <div class="language-level">Advanced</div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="language-card">
+                    <div class="language-icon">
+                      <i class="fab fa-js"></i>
+                    </div>
+                    <h4 class="language-name">JavaScript</h4>
+                    <div class="language-level">Intermediate</div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="250">
+                  <div class="language-card">
+                    <div class="language-icon">
+                      <i class="fab fa-html5"></i>
+                    </div>
+                    <h4 class="language-name">HTML/CSS</h4>
+                    <div class="language-level">Intermediate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- AI & ML Libraries Section (Listed format) -->
+            <div class="skill-section mb-5">
+              <h3 class="skills-category-title text-center mb-4">
+                <i class="fas fa-robot me-2"></i>AI & ML Libraries
+              </h3>
+              
+              <div class="row">
+                <div class="col-lg-10 mx-auto">
+                  <div class="row ml-libraries-grid">
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="100">
+                      <div class="ml-library-item">
+                        <span class="library-name">Scikit-learn</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="150">
+                      <div class="ml-library-item">
+                        <span class="library-name">TensorFlow</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="ml-library-item">
+                        <span class="library-name">Keras</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="250">
+                      <div class="ml-library-item">
+                        <span class="library-name">PyTorch</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="ml-library-item">
+                        <span class="library-name">HuggingFace</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="350">
+                      <div class="ml-library-item">
+                        <span class="library-name">OpenCV</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="400">
+                      <div class="ml-library-item">
+                        <span class="library-name">YOLO</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3" data-aos="zoom-in" data-aos-delay="450">
+                      <div class="ml-library-item">
+                        <span class="library-name">spaCy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Rest of the skills cards container -->
+            <div class="row skills-cards-container">
+              <!-- Computer Vision & Image Processing -->
+              <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="skill-card">
+                  <div class="skill-card-header">
+                    <i class="fas fa-camera-retro skill-icon"></i>
+                    <h3>Computer Vision</h3>
+                  </div>
+                  <div class="skill-card-body">
+                    <ul class="skill-list">
+                      <li><span class="skill-highlight">OpenCV</span> - Image processing & analysis</li>
+                      <li><span class="skill-highlight">YOLO v5-v8</span> - Object detection</li>
+                      <li><span class="skill-highlight">Detectron2</span> - Instance segmentation</li>
+                      <li><span class="skill-highlight">Advanced OCR</span> - Vision models for text extraction</li>
+                      <li><span class="skill-highlight">MediaPipe</span> - Face & body tracking</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- NLP & Language Models -->
+              <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="skill-card">
+                  <div class="skill-card-header">
+                    <i class="fas fa-language skill-icon"></i>
+                    <h3>NLP & Language Models</h3>
+                  </div>
+                  <div class="skill-card-body">
+                    <ul class="skill-list">
+                      <li><span class="skill-highlight">OpenAI</span> - GPT models implementation</li>
+                      <li><span class="skill-highlight">Gemini Pro</span> - Google's LLM integration</li>
+                      <li><span class="skill-highlight">HuggingFace</span> - Transformer models</li>
+                      <li><span class="skill-highlight">NLTK/spaCy</span> - Text processing</li>
+                      <li><span class="skill-highlight">LangChain</span> - LLM application development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Generative AI Frameworks -->
+              <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="skill-card">
+                  <div class="skill-card-header">
+                    <i class="fas fa-wand-magic-sparkles skill-icon"></i>
+                    <h3>Generative AI Tools</h3>
+                  </div>
+                  <div class="skill-card-body">
+                    <ul class="skill-list">
+                      <li><span class="skill-highlight">LangChain</span> - LLM application framework</li>
+                      <li><span class="skill-highlight">LangGraph</span> - Agent orchestration</li>
+                      <li><span class="skill-highlight">Crew AI</span> - Multi-agent systems</li>
+                      <li><span class="skill-highlight">AutoGen</span> - Autonomous agent creation</li>
+                      <li><span class="skill-highlight">Stable Diffusion</span> - Image generation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Databases & Storage -->
+              <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="skill-card">
+                  <div class="skill-card-header">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>Databases & Storage</h3>
+                  </div>
+                  <div class="skill-card-body">
+                    <ul class="skill-list">
+                      <li><span class="skill-highlight">SQL Server</span> - Relational database</li>
+                      <li><span class="skill-highlight">MySQL</span> - Open source SQL database</li>
+                      <li><span class="skill-highlight">MongoDB</span> - NoSQL document store</li>
+                      <li><span class="skill-highlight">Supabase</span> - Open source Firebase alternative</li>
+                      <li><span class="skill-highlight">VectorDB</span> - Embeddings storage for AI</li>
+                      <li><span class="skill-highlight">Pinecone</span> - Vector database</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Frameworks & Development -->
+              <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                <div class="skill-card">
+                  <div class="skill-card-header">
+                    <i class="fas fa-layer-group skill-icon"></i>
+                    <h3>Frameworks & Development</h3>
+                  </div>
+                  <div class="skill-card-body">
+                    <ul class="skill-list">
+                      <li><span class="skill-highlight">Flask/FastAPI</span> - Python web APIs</li>
+                      <li><span class="skill-highlight">Django</span> - Full-stack web framework</li>
+                      <li><span class="skill-highlight">.NET</span> - Winform/ASP.NET MVC</li>
+                      <li><span class="skill-highlight">React</span> - Frontend development</li>
+                      <li><span class="skill-highlight">Docker</span> - Containerization</li>
+                      <li><span class="skill-highlight">Git/GitHub</span> - Version control</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Cloud & Deployment -->
+              <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600"></div>
+                <div class="skill-card">
+                  <div class="skill-card-header">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3>Cloud & Deployment</h3>
+                  </div>
+                  <div class="skill-card-body">
+                    <ul class="skill-list">
+                      <li><span class="skill-highlight">AWS</span> - EC2, S3, Lambda, SageMaker</li>
+                      <li><span class="skill-highlight">Azure</span> - AKS, Cognitive Services</li>
+                      <li><span class="skill-highlight">GCP</span> - Google Cloud AI, Vertex AI</li>
+                      <li><span class="skill-highlight">MLOps</span> - Model deployment workflows</li>
+                      <li><span class="skill-highlight">CI/CD</span> - GitHub Actions, Azure DevOps</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Advanced Tools Section -->
+            <div class="mt-4 mb-0">
+              <h3 class="text-center mb-4" data-aos="fade-up">Advanced AI Tools & Expertise</h3>
+              <div class="row justify-content-center">
+                <div class="col-lg-10">
+                  <div class="advanced-tools-container" data-aos="fade-up">
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="100">
+                      <div class="tool-icon">
+                        <i class="fas fa-brain"></i>
+                      </div>
+                      <div class="tool-name">RAG Systems</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="150">
+                      <div class="tool-icon">
+                        <i class="fas fa-users-gear"></i>
+                      </div>
+                      <div class="tool-name">Agentic RAG</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="tool-icon">
+                        <i class="fas fa-robot"></i>
+                      </div>
+                      <div class="tool-name">Agentic AI</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="250">
+                      <div class="tool-icon">
+                        <i class="fas fa-diagram-project"></i>
+                      </div>
+                      <div class="tool-name">LangGraph</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="tool-icon">
+                        <i class="fas fa-people-group"></i>
+                      </div>
+                      <div class="tool-name">Crew AI</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="350">
+                      <div class="tool-icon">
+                        <i class="fas fa-wand-sparkles"></i>
+                      </div>
+                      <div class="tool-name">AutoGen</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="400">
+                      <div class="tool-icon">
+                        <i class="fas fa-terminal"></i>
+                      </div>
+                      <div class="tool-name">ChatGPT API</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="450">
+                      <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <div class="tool-name">Embedding Models</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="500">
+                      <div class="tool-icon">
+                        <i class="fas fa-eye"></i>
+                      </div>
+                      <div class="tool-name">Vision AI</div>
+                    </div>
+                    <div class="advanced-tool-item" data-aos="zoom-in" data-aos-delay="550">
+                      <div class="tool-icon">
+                        <i class="fas fa-microchip"></i>
+                      </div>
+                      <div class="tool-name">GPT Fine-tuning</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials section with no top spacing -->
+        <div class="testimonials-section" style="padding-top: 60px; padding-bottom: 60px;">
+          <h2 class="section-title testimonial-title text-center mb-5" data-aos="fade-up">What People Say</h2>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="testimonial-item text-center p-4" data-aos="zoom-in">
+                        <div class="testimonial-img mb-3">
+                          <img src="Data/testimonial1.jpg" alt="Testimonial" class="rounded-circle">
+                        </div>
+                        <p class="testimonial-text">"Alok's expertise in machine learning helped our team develop a predictive analytics solution that increased our business efficiency by 35%. His technical knowledge and problem-solving abilities were invaluable."</p>
+                        <h5 class="testimonial-name mt-3">Sarah Johnson</h5>
+                        <p class="testimonial-position">CTO, TechInnovate Inc.</p>
+                        <div class="testimonial-social mt-2">
+                          <a href="https://linkedin.com/in/sarah-johnson-tech" target="_blank" class="social-link me-2" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://techinnovate.com" target="_blank" class="social-link" title="Company Website">
+                            <i class="fas fa-globe"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="testimonial-item text-center p-4">
+                        <div class="testimonial-img mb-3">
+                          <img src="Data/testimonial2.jpg" alt="Testimonial" class="rounded-circle">
+                        </div>
+                        <p class="testimonial-text">"Working with Alok on our NLP project was a game-changer. His deep understanding of language models and ability to apply them to real-world problems resulted in an impressive chatbot system that our clients love."</p>
+                        <h5 class="testimonial-name mt-3">Michael Chang</h5>
+                        <p class="testimonial-position">Project Manager, AI Solutions</p>
+                        <div class="testimonial-social mt-2">
+                          <a href="https://linkedin.com/in/michael-chang-ai" target="_blank" class="social-link me-2" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://aisolutions.tech" target="_blank" class="social-link" title="Company Website">
+                            <i class="fas fa-globe"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="testimonial-item text-center p-4">
+                        <div class="testimonial-img mb-3">
+                          <img src="Data/testimonial3.jpg" alt="Testimonial" class="rounded-circle">
+                        </div>
+                        <p class="testimonial-text">"Alok's computer vision expertise was essential for our retail analytics platform. He developed a customer tracking system that provides valuable insights and has become a core feature of our product."</p>
+                        <h5 class="testimonial-name mt-3">Priya Sharma</h5>
+                        <p class="testimonial-position">Product Director, RetailTech</p>
+                        <div class="testimonial-social mt-2">
+                          <a href="https://linkedin.com/in/priya-sharma-retail" target="_blank" class="social-link me-2" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="https://retailtech.io" target="_blank" class="social-link" title="Company Website">
+                            <i class="fas fa-globe"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact section with ID - no top margin/padding -->
+        <div id="contact" class="p-5 contact-section">
+          <section class="py-3 py-md-5">
             <div class="container">
               <div class="row justify-content-md-center">
                 <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-                  <h2 class="mb-4 display-5 text-center">Contact</h2>
-                  <p class="text-secondary mb-5 text-center">The best way to contact us is to use our contact form
-                    below. Please fill out all of the required fields and we will get back to you as soon as possible.
-                  </p>
+                  <h2 class="mb-4 display-5 text-center section-title">Contact</h2>
+                  <p class="text-secondary mb-5 text-center">I'm always open to discussing new projects, opportunities, and partnerships. Feel free to reach out using the form below.</p>
                   <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
                 </div>
               </div>
@@ -414,117 +896,189 @@
               <div class="row justify-content-lg-center">
                 <div class="col-12 col-lg-9">
                   <div class="bg-white border rounded shadow-sm overflow-hidden">
-
-                    <form action="#! ">
-                      <div class="row gy-4 gy-xl-5 p-4 p-xl-5 text-align:start">
+                    <form id="contactForm" class="contact-form">
+                      <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                         <div class="col-12">
-                          <label for="fullname" class="form-label text-align:start">Full Name <span class="text-danger">*</span></label>
-                          <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                          <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control text-start" id="fullname" name="from_name" value="" required>
                         </div>
                         <div class="col-12 col-md-6">
                           <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
                           <div class="input-group">
                             <span class="input-group-text">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path
-                                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                              </svg>
+                              <i class="fas fa-envelope"></i>
                             </span>
-                            <input type="email" class="form-control" id="email" name="email" value="" required>
+                            <input type="email" class="form-control text-start" id="email" name="reply_to" value="" required>
                           </div>
                         </div>
                         <div class="col-12 col-md-6">
                           <label for="phone" class="form-label">Phone Number</label>
                           <div class="input-group">
                             <span class="input-group-text">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-telephone" viewBox="0 0 16 16">
-                                <path
-                                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                              </svg>
+                              <i class="fas fa-phone"></i>
                             </span>
-                            <input type="tel" class="form-control" id="phone" name="phone" value="">
+                            <input type="tel" class="form-control text-start" id="phone" name="phone" value="">
                           </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control text-start" id="subject" name="subject" required>
                         </div>
                         <div class="col-12">
                           <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                          <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                          <textarea class="form-control text-start" id="message" name="message" rows="4" required></textarea>
                         </div>
                         <div class="col-12">
                           <div class="d-grid">
-                            <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+                            <button class="btn btn-dark btn-lg" type="submit" id="submitBtn">
+                              <span class="btn-text">Send Message</span>
+                              <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                            </button>
                           </div>
+                        </div>
+                        <div class="col-12">
+                          <div id="form-status" class="mt-3"></div>
                         </div>
                       </div>
                     </form>
-
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          
         </div>
-
       </div>
-
-
-
-      <!-- <div class="top-right">Top Right</div>
-      <div class="bottom-right">Bottom Right</div>
-      <div class="centered">Centered</div> -->
     </div>
-
-    <!-- <div class="container" style="background: url('Back-Image.jpg');">
-      <p Welcome to my data science portfolio! I am Alok Ranjan, a passionate and results-driven data scientist with a strong background in Deep learning , Computer vision, NLP and Generative AI. My journey in data science has been marked by a commitment to leveraging data to drive insightful decision-making and solve complex problems..</p>
-      <img src="Back-Image.jpg" class="img-fluid" alt="..."> -->
-    <!-- </div> -->
-    <!-- <section id="about">
-      <h2>About Me</h2>
-
-      <p>Machine Learinig, Computer vision, NLP and Generative AI.</p>
-    </section>
-     <section id="skills">
-      <h2>Skills</h2>
-      <h3>Programming Languages</h3>
-      <ul>
-        <li>Python</li>
-        <li>c#</C>
-        </li>
-      </ul>
-      <h3>Libraries and Frameworks</h3>
-      <ul>
-        <li>TensorFlow/PyTorch</li>
-        <li>Scikit-learn</li>
-        <li>Pandas</li>
-        <li>NumPy</li>
-      </ul>
-      <h3>Machine Learning Techniques</h3>
-      <ul>
-        <li>Regression</li>
-        <li>Classification</li>
-        <li>Natural Language Processing</li>
-        <li>Computer Vision</li>
-      </ul>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li><a href="mailto:alokranjan.ucer@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/your_linkedin_profile">LinkedIn</a></li>
-      </ul>
-    </section> -->
   </main>
+
+  <!-- Add a footer section -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Alok Ranjan</h5>
+          <p class="mb-3">Data Scientist & AI Specialist</p>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope me-2"></i> alokranjan.ucer@gmail.com</p>
+            <p><i class="fa-solid fa-phone me-2"></i> +91-8005086600</p>
+            <p><i class="fa-solid fa-location-dot me-2"></i> New Delhi, India</p>
+          </div>
+        </div>
+        
+        <!-- Hire Me Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Hire Me On</h5>
+          <div class="hire-links">
+            <div class="row">
+              <div class="col-6 mb-3">
+                <a href="https://www.fiverr.com/alokranjan" target="_blank" class="text-decoration-none">
+                  <i class="fa-brands fa-fiverr"></i> Fiverr
+                </a>
+              </div>
+              <div class="col-6 mb-3">
+                <a href="https://www.upwork.com/freelancers/alokranjan" target="_blank" class="text-decoration-none">
+                  <i class="fa-brands fa-upwork"></i> Upwork
+                </a>
+              </div>
+              <div class="col-6 mb-3">
+                <a href="https://www.braintrust.com/talent/alokranjan" target="_blank" class="text-decoration-none">
+                  <i class="fa-solid fa-brain"></i> Braintrust
+                </a>
+              </div>
+              <div class="col-6 mb-3">
+                <a href="https://www.freelancer.com/u/alokranjan" target="_blank" class="text-decoration-none">
+                  <i class="fa-solid fa-laptop-code"></i> Freelancer
+                </a>
+              </div>
+              <div class="col-6 mb-3">
+                <a href="https://www.toptal.com/resume/alokranjan" target="_blank" class="text-decoration-none">
+                  <i class="fa-solid fa-crown"></i> Toptal
+                </a>
+              </div>
+              <div class="col-6 mb-3">
+                <a href="https://www.turing.com/developers/alokranjan" target="_blank" class="text-decoration-none">
+                  <i class="fa-solid fa-code"></i> Turing
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Connect With Me Section -->
+        <div class="col-lg-4 col-md-12">
+          <h5 class="text-uppercase mb-4">Connect With Me</h5>
+          <div class="social-links">
+            <!-- Professional Networks -->
+            <div class="mb-3">
+              <a href="https://github.com/alokyadav2020" target="_blank" class="me-3 social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/alok-ranjan-digi-coder" target="_blank" class="me-3 social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://medium.com/@alokranjan" target="_blank" class="me-3 social-icon">
+                <i class="fa-brands fa-medium"></i>
+              </a>
+              <a href="https://stackoverflow.com/users/alokranjan" target="_blank" class="me-3 social-icon">
+                <i class="fa-brands fa-stack-overflow"></i>
+              </a>
+            </div>
+            
+            <!-- Social Media -->
+            <div>
+              <a href="https://twitter.com/alokranjan" target="_blank" class="me-3 social-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://facebook.com/alokranjan" target="_blank" class="me-3 social-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://instagram.com/alokranjan" target="_blank" class="me-3 social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://youtube.com/channel/alokranjan" target="_blank" class="social-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          
+            <div class="mt-4">
+              <button onclick="openTab(this)" href='Data/AlokRanjanNew.pdf' name='Data/AlokRanjanNew.pdf' 
+                class="btn btn-outline-primary me-2">Download CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-4">
+        <div class="col-12">
+          <hr class="mt-2 mb-3" style="height: 1px; border: none;">
+          <p class="text-center mb-0 copyright">© 2023 Alok Ranjan. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" class="btn btn-dark btn-sm rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <!-- Add AOS library for scroll animations -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init();
+  </script>
+  <!-- Add EmailJS scripts before the closing body tag -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      // Initialize EmailJS with your user ID
+      emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+    })();
+  </script>
 </body>
 
 </html>
